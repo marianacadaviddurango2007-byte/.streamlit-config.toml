@@ -1,0 +1,8 @@
+Ini, TOML
+[theme]
+base = "dark"
+primaryColor = "#D4AF37"
+backgroundColor = "#121417"
+secondaryBackgroundColor = "#1E2229"
+textColor = "#EAECEF"
+font = "serif"
