@@ -23,6 +23,21 @@ pesos = pd.Series(mp.pesos, index=activos, name="Peso")
 
 st.title(f"📊 {mp.nombre_portafolio}")
 st.caption(f"Dashboard para inversionistas · {mp.integrantes}")
+BG_COLOR = "#121417"     # Ajusta si cambias el backgroundColor de .streamlit/config.toml
+TEXT_COLOR = "#EAECEF"
+GRID_COLOR = "#2C313A"
+
+plt.rcParams.update({
+    "figure.facecolor": BG_COLOR,
+    "axes.facecolor": BG_COLOR,
+    "savefig.facecolor": BG_COLOR,
+    "text.color": TEXT_COLOR,
+    "axes.labelcolor": TEXT_COLOR,
+    "xtick.color": TEXT_COLOR,
+    "ytick.color": TEXT_COLOR,
+    "axes.edgecolor": GRID_COLOR,
+    "grid.color": GRID_COLOR,
+})
 
 # =====================================================================
 # 1. DATOS: Yahoo Finance (con archivo de respaldo)
